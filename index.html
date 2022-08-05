@@ -9,11 +9,11 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="#" class="header__logo">
-                <img src="img/logo.png" alt="" class="header__logo-image">
-                <span class="header__logo-text">SCANDI</span>
-            </a>
             <nav class="header__nav">
+                <a href="#" class="header__nav-logo">
+                    <img src="img/logo.png" alt="" class="header__logo-image">
+                    <span class="header__logo-text">SCANDI</span>
+                </a>
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
                         <a href="#" class="header__nav-link">О компании</a>
@@ -38,52 +38,101 @@
                     </li>
                 </ul>
             </nav>
-            <section class="header__info info">
-                <h1 class="info__title">Поможем сделать вашу квартиру уютнее</h1>
-                <p class="info__text">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку </p>
-                <a href="#" class="info__link">Оставить заявку</a>
+            <section class="header__content">
+                <h1 class="header__title">Поможем сделать вашу квартиру уютнее</h1>
+                <p class="header__text">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку </p>
+                <a href="#" class="btn header__link">Оставить заявку</a>
             </section> 
         </div>
     </header>
     <main class="main">
-        <div class="container">
-            <section class="main__about about">
-                <h2 class="about__title">О нас</h2>
-                <img src="img/about.jpg" alt="" class="about__image">
-                <p class="about__text">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.</p>
-                <p class="about__text">Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать: 
-                    <q>Да! Это именно то, что действительно достойно моего дома!</q>
-                </p>
-                <ul class="about__list">
-                    <li class="about__item">
-                        <span class="about__experience-number">5</span>
-                        <span class="about__experience-text">лет опыта</span>
-                    </li>
-                    <li class="about__item">
-                        <span class="about__project-number">100</span>
-                        <span class="about__project-text">проектов</span>
-                    </li>
-                    <li class="about__item">
-                        <span class="about__awards-number">10</span>
-                        <span class="about__awards-text">наград</span>
-                    </li>
-                </ul>
-            </section>
-            <section class="main__works works">
-                <h2 class="works__title">Наши работы</h2>
-                <figure class="work">
-                    <img src="img/works-1.jpg" alt="" class="work__image">
-                    <figcaption class="work__content">
-                        <p class="work__title">Квартира-студия 30 кв.м.</p>
-                        <p class="work__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+        <section class="main-about">
+            <div class="container">
+                <h2 class="main-about__title">О нас</h2>
+                <div class="main-about__wrapper">
+                    <img src="img/about.jpg" alt="" class="main-about__image">
+                    <div class="main-about__inner">
+                        <p class="main-about__text">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.</p>
+                        <p class="main-about__text">Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать: <q>Да! Это именно то, что действительно достойно моего дома!</q></p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-about__box">
+                <div class="container">
+                    <div class="main-about__wrapper">
+                        <div class="main-about__experience">
+                            <span class="main-about__number">5</span>
+                            <span class="main-about__text">Лет опыта</span>
+                        </div>
+                        <div class="main-about__projects">
+                            <span class="main-about__number">100</span>
+                            <span class="main-about__text">Проектов</span>
+                        </div>
+                        <div class="main-about__awards">
+                            <span class="main-about__number">10</span>
+                            <span class="main-about__text">Наград</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-works">
+            <div class="container">
+                <h2 class="main-works__title">Наши работы</h2>
+                <figure class="main-work">
+                    <img src="img/works-1.jpg" alt="" class="main-work__image">
+                    <figcaption class="main-work__content">
+                        <p class="main-work__title">Квартира-студия 30 кв.м.</p>
+                        <p class="main-work__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
                     </figcaption>
                 </figure>
-                <img src="img/works-2.jpg" alt="" class="works__image">
-                <img src="img/works-3.jpg" alt="" class="works__image">
-                <img src="img/works-4.jpg" alt="" class="works__image">
-                <a href="#" class="works__more more">Смотреть еще</a>
-            </section>
-        </div>
+                <img src="img/works-2.jpg" alt="" class="main-works__image">
+                <img src="img/works-3.jpg" alt="" class="main-works__image">
+                <img src="img/works-4.jpg" alt="" class="main-works__image">
+                <a href="#" class="main-works__more more">Смотреть еще</a>
+            </div>
+        </section>
+        <section class="main-crew">
+            <div class="container">
+                <h2 class="main-crew__title">Команда</h2>
+                <div class="main-crew__wrapper">
+                    <div class="main-crew__employee">
+                        <img src="img/crew-1.jpg" alt="" class="main-crew__employee-img">
+                        <p class="main-crew__employee-text">Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается и помогает сделать вашу квартиру красивой и уютной.</p>
+                    </div>
+                    <div class="main-crew__employee">
+                        <img src="img/crew-2.jpg" alt="" class="main-crew__employee-img">
+                        <p class="main-crew__employee-text">С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы и ответит на все вопросы.</p>
+                    </div>
+                    <div class="main-crew__employee">
+                        <img src="img/crew-3.jpg" alt="" class="main-crew__employee-img">
+                        <p class="main-crew__employee-text">Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно знает, как обустроить дом так, чтобы вам понравилось.</p>
+                    </div>
+                </div>
+                <div class="main-crew__works crew-works">
+                    <h2 class="crew-works__title">Как мы работаем</h2>
+                    <ol class="crew-works__list">
+                        <li class="crew-works__item">
+                            <span class="crew-works__number">1</span>
+                            <p class="crew-works__text">Знакомимся, выезжаем на объект, утверждаем концепцию, подписываем договор.</p>
+                        </li>
+                        <li class="crew-works__item">
+                            <span class="crew-works__number">2</span>
+                            <p class="crew-works__text">Подбираем мебель, текстиль, аксессуары. Делаем 3D-визуализацию.</p>
+                        </li>
+                        <li class="crew-works__item">
+                            <span class="crew-works__number">3</span>
+                            <p class="crew-works__text">Находим нужные магазины, помогаем с доставкой и оплатой товаров.</p>
+                        </li>
+                        <li class="crew-works__item">
+                            <span class="crew-works__number">4</span>
+                            <p class="crew-works__text">Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем шторы, находим места для мелочей</p>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
     </main>
 </body>
 </html> 
