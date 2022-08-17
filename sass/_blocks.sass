@@ -62,8 +62,9 @@
         display: flex
         align-item: center
         justify-content: flex-start
+        margin-bottom: 21px
     &__image
-        width: 100%
+        width: 445px
         margin-right: 63px
     &__inner
         max-width: 528px
@@ -73,9 +74,28 @@
         line-height: 30px
         &:first-child
             margin-bottom: 52px
-    &__box
+    
+
+.experience
+    &--bg
         background: $secondBG
         padding: 85px 0 81px
+    &__wrapper
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+    &__content
+        justify-self: center
+    &__text
+        text-align: center
+        display: block
+        color: $white
+        &--big
+            font-size: 50px
+            line-height: 62px
+        &--small
+            font-size: 30px
+            line-height: 37px
+
 
 
 
