@@ -349,7 +349,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.recall__slider {
+.recall__slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
