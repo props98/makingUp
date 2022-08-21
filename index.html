@@ -173,23 +173,31 @@
     </main>
     <footer id="form" class="footer">
         <div class="footer__wrapper">
-            <div class="footer-form">
-                <h2 class="footer-form__title title">Оставить заявку</h2>
-                <p class="footer-form__text">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
-                <form id="#" action="#">
-                    <label for="name">имя</label>
-                    <input id="name" type="text" placeholder="Ваше имя">
-                    <label for="phone">телефон</label>
-                    <input id="phone" type="text" placeholder="Ваш телефон">
-                    <button class="btn">Отправить заявку</button>
-                </form>
+            <div class="footer__box container">
+                <div class="footer-form footer-form--frame">
+                    <h2 class="footer-form__title title">Оставить заявку</h2>
+                    <p class="footer-form__text">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
+                    <form class="form" id="#" action="#">
+                        <label class="form__name-lable" for="name">имя</label>
+                        <input class="form__input" id="name" type="text" placeholder="Ваше имя">
+                        <label class="form__phone-lable" for="phone">телефон</label>
+                        <input class="form__input" id="phone" type="text" placeholder="Ваш телефон">
+                        <button class="form__btn btn">Отправить заявку</button>
+                    </form>
+                </div>
+                <div class="footer__img">
+                    <img src="img/map.jpg" alt="Адрес на карте: Большая Конюшенная ул. 19" class="footer__img-map">
+                </div>
             </div>
-            <img src="img/map.jpg" alt="Адрес на карте: Большая Конюшенная ул. 19" class="footer__img-map">
         </div>
-        <div class="footer__contacts contacts">
-            <a href="tel:+79818574624" class="contacts__phone">+7 (981) 857-46-24</a>
-            <span class="contacts__adress">г. Санкт-петербург, ул. Большая Конюшенная, 19</span>
-            <span class="contacts__director">ИП Королёва А.А.</span>
+        <div class="contacts contacts--position">
+            <div class="container">
+                <div class="contacts__wrapper">
+                    <a href="tel:+79818574624" class="contacts__phone">+7 (981) 857-46-24</a>
+                    <span class="contacts__adress">г. Санкт-петербург, ул. Большая Конюшенная, 19</span>
+                    <span class="contacts__director">ИП Королёва А.А.</span>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
