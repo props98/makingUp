@@ -3,27 +3,45 @@
     padding: 25px 67px
     color: $mainColor
     background: $btnBG
+    border: none
+    cursor: pointer
 
-    
+.more
+    font-weight: 500
+    font-size: 30px
+    line-height: 37px
+    &--position
+        position: relative
+        width: 300px
+        padding: 5px 70px 5px 5px
+        display: block
+        margin: 0 auto
+        &:after
+            content: ""
+            position: absolute
+            width: 60px
+            height: 30px
+            right: 0
+            top: 50%
+            background: url('/img/arrow.svg') no-repeat center 70%
+            transform: translateY(-50%)
+
+.title
+    margin: 0
+    font-weight: 400
+    font-size: 40px
+    line-height: 50px
+    text-transform: uppercase
+    color: $mainColor
+
+//* Header
 .header
-    width: 100%
-    height: 715px
-    background: url(/img/main-banner.jpg) no-repeat
-    background-size: cover
-    &__nav
-        display: flex
-        align-items: center
-        justify-content: space-between
-        padding: 31px 0
-    &__nav-logo
-        display: flex
-        align-items: center
-    &__nav-list
-        display: flex
-        align-items: center
-        list-style: none
-    &__nav-item
-        margin-left: 26px
+    &--bg
+        width: 100%
+        height: 715px
+        background: url(/img/main-banner.jpg) no-repeat
+        background-size: cover
+        margin-bottom: 55px
     &__content
         max-width: 535px
     &__title
@@ -38,3 +56,272 @@
         line-height: 30px
         margin: 0 0 21px
 
+.header-nav
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 21px 0
+    &__logo
+        display: flex
+        align-items: center
+        padding: 10px 10px 10px 24px
+        position: relative
+    &__logo-image
+        position: absolute
+        left: -14px
+        transform: translate(50%)
+    &__list
+        display: flex
+        align-items: center
+        list-style: none
+        margin: 0
+    &__link
+        display: block
+        padding: 10px 13px
+
+//* About
+.about
+    &--size
+        margin-bottom: 67px
+    &__title
+        text-align: center
+        margin-bottom: 45px
+    &__wrapper
+        display: flex
+        align-item: center
+        justify-content: flex-start
+        margin-bottom: 21px
+    &__image
+        width: 445px
+        margin-right: 63px
+    &__inner
+        max-width: 528px
+    &__text
+        margin: 0
+        font-size: 18px
+        line-height: 30px
+        &:first-child
+            margin-bottom: 52px
+    
+.experience
+    &--bg
+        background: $secondBG
+        padding: 85px 0 81px
+    &__wrapper
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+    &__content
+        justify-self: center
+    &__text
+        text-align: center
+        display: block
+        color: $white
+        &--big
+            font-size: 50px
+            line-height: 62px
+        &--small
+            font-size: 30px
+            line-height: 37px
+
+//* Works
+.works
+    &--position
+        margin-bottom: 65px
+    &__row-top
+        display: grid
+        grid-template-columns: 488px 692px
+        column-gap: 20px
+        margin-bottom: 30px
+    &__row-bottom
+        display: grid
+        grid-template-columns: 692px 488px
+        column-gap: 20px
+        margin-bottom: 40px
+    &__title
+        margin-bottom: 40px
+
+.work
+    &--size
+        margin: 0
+        position: relative
+        width: 488px
+    &__content
+        position: absolute
+        width: 488px
+        height: 451px
+        padding: 86px 35px 0
+        background: rgba(100, 72, 69, 0.8)
+        color: $white
+        top: 0
+    &__title
+        width: 270px
+        margin: 0 auto
+        margin-bottom: 37px
+        font-weight: 500
+        font-size: 30px
+        line-height: 37px
+        text-align: center
+    &__text
+        margin: 0
+        font-weight: 400
+        font-size: 18px
+        line-height: 30px
+
+//* Команда
+.crew
+    &--bg
+        padding-top: 50px
+        padding-bottom: 39px
+        background: $thirdBG
+    &__title
+        margin-bottom: 40px
+        text-align: center
+    &__wrapper
+        display: grid
+        grid-template-columns: 320px 320px 320px
+        column-gap: 38px
+        justify-content: center
+    &__employee-img
+        width: 100%
+        height: auto
+    &__employee-text
+        font-size: 18px
+        line-height: 30px
+
+//* Работа команды
+.crew-works
+    &--bg
+        background: $thirdBG
+        padding-bottom: 80px
+    &__title
+        text-align: center
+        margin-bottom: 60px
+    &__list
+        list-style: none
+        display: flex
+        justify-content: space-between
+    &__item
+        width: 285px
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__number
+        position: relative
+        font-weight: 500
+        font-size: 30px
+        line-height: 30px
+        color: $white
+        margin-bottom: 40px
+        z-index: 10
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 70px
+            height: 70px
+            background: $secondBG
+            border-radius: 50%
+            z-index: -10
+    &__text
+        margin: 0
+        text-align: center
+        font-size: 18px
+        line-height: 30px
+
+//* Отзывы
+.recall
+    &--position
+        padding-top: 65px
+    &__title
+        text-align: center
+        margin-bottom: 40px
+    &__slider-btn
+        cursor: pointer
+    &__wrapper
+        width: 1036px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__slide
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__content
+        width: 400px
+        margin-right: 20px
+    &__text
+        margin: 0
+        margin-bottom: 45px
+        font-size: 18px
+        line-height: 30px
+    &__img-wrapper
+        width: 400px
+    &__image
+        width: 100%
+        height: auto
+        &:first-child
+            margin-bottom: 25px
+
+//* Footer
+.footer
+    &__wrapper
+        background: $secondBG
+        margin-top: 60px
+        max-height: 624px
+    &__box
+        display: flex
+
+.footer-form
+    &--frame
+        padding: 50px 20px 0 83px
+    &__title
+        margin-bottom: 24px
+        color: $white
+    &__text
+        margin: 0
+        font-size: 18px
+        line-height: 30px
+        color: $white
+        margin-bottom: 42px
+
+
+.form
+    display: flex
+    flex-direction: column
+    &__name-lable,
+    &__phone-lable
+        display: none
+    &__input
+        padding: 16px 0
+        background: $secondBG
+        border: none
+        color: $white
+        border-bottom: 1px solid $white
+    &__btn
+        width: 310px
+        margin-top: 31px
+
+.contacts
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        padding: 37px 0
+    &__phone
+        font-size: 18px
+        line-height: 30px
+        color: $mainColor
+        margin-right: 42px
+    &__adress
+        font-size: 18px
+        line-height: 30px
+        color: $mainColor
+    &__director
+        margin-left: auto
+        font-size: 18px
+        line-height: 30px
+        color: $mainColor
