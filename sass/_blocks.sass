@@ -5,6 +5,10 @@
     background: $btnBG
     border: none
     cursor: pointer
+    transition: ease-in 0.3s
+    &:hover
+        background: $mainBG
+        color: $mainColor
 
 .more
     font-weight: 500
@@ -79,6 +83,17 @@
     &__link
         display: block
         padding: 10px 13px
+        position: relative
+        transition: ease-in 0.3s
+        &:hover::after
+            content: ''
+            position: absolute
+            width: 90%
+            height: 1px
+            background: $mainColor
+            bottom: 5px
+            left: 50%
+            transform: translateX(-50%)
 
 //* About
 .about

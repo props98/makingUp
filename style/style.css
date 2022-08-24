@@ -26,6 +26,12 @@ body {
   background: #CC8B86;
   border: none;
   cursor: pointer;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+.btn:hover {
+  background: #EFE6E4;
+  color: #533738;
 }
 
 .more {
@@ -126,6 +132,20 @@ body {
 .header-nav__link {
   display: block;
   padding: 10px 13px;
+  position: relative;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+.header-nav__link:hover::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  background: #533738;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .about--size {
@@ -139,7 +159,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  align-item: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
